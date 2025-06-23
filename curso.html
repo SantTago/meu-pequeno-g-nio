@@ -3961,7 +3961,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-3xl font-bold header-font">Diário de Progresso do Gênio</h2>
+                            <h2 class=" color text-3xl font-bold header-font">Diário de Progresso do Gênio</h2>
                             <p class="text-lg opacity-90">Um espaço para registrar as pequenas e grandes vitórias</p>
                         </div>
                     </div>
@@ -4414,7 +4414,512 @@
                     </div>
                 </div>
             </div>
-       
+<!---------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Atividades para o Desenvolvimento Infantil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --_pa_primary-color: #4CAF50; /* Verde vibrante */
+            --_pa_secondary-color: #FFC107; /* Amarelo ensolarado */
+            --_pa_text-color: #333;
+            --_pa_background-color: #e8f5e9; /* Verde claro */
+            --_pa_card-background: #ffffff;
+            --_pa_border-color: #c8e6c9;
+            --_pa_shadow-color: rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+           
+            overflow-x: hidden; /* Evita scroll horizontal indesejado */
+        }
+
+        h1, h2, h3 {
+            color: var(--_pa_primary-color);
+            font-weight: 600;
+        }
+
+        ._pa_container {
+            max-width: 1200px;
+            margin: 40px auto;
+            background: var(--_pa_card-background);
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px var(--_pa_shadow-color);
+            animation: _pa_fadeIn 1s ease-out; /* Animação de entrada do container */
+        }
+
+        ._pa_hero-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--_pa_border-color);
+        }
+
+        ._pa_hero-section h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: var(--_pa_primary-color);
+        }
+
+        ._pa_hero-section p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        ._pa_filters {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--_pa_border-color);
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            animation: _pa_slideInFromTop 0.8s ease-out; /* Animação dos filtros */
+        }
+
+        ._pa_filters label {
+            margin-right: 8px;
+            font-weight: 600;
+            color: var(--_pa_primary-color);
+            font-size: 1.1em;
+        }
+
+        ._pa_filters select, ._pa_filters button {
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: 1px solid var(--_pa_primary-color);
+            font-size: 1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        ._pa_filters select {
+            background-color: #f0fff0; /* Um verde bem clarinho para o select */
+            color: var(--_pa_text-color);
+            appearance: none; /* Remove a seta padrão do select */
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%234CAF50%22%20d%3D%22M287%2069.9a14.6%2014.6%200%200%200%20-20.6%200L146.2%20190.2%2026%2069.9A14.6%2014.6%200%200%200%205.4%2090.5l120.8%20120.8a14.6%2014.6%200%200%200%2020.6%200L287%2090.5a14.6%2014.6%200%200%200%200-20.6z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 12px top 50%;
+            background-size: 12px auto;
+            padding-right: 30px; /* Espaço para a seta customizada */
+        }
+
+        ._pa_filters select:hover {
+            border-color: var(--_pa_secondary-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        ._pa_filters button {
+            background-color: var(--_pa_primary-color);
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+        }
+
+        ._pa_filters button:hover {
+            background-color: #43A047; /* Tom um pouco mais escuro de verde */
+            transform: translateY(-2px); /* Efeito "flutuante" */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        ._pa_activity-section h2 {
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            text-align: center;
+            border-bottom: 2px solid var(--_pa_primary-color);
+            padding-bottom: 10px;
+            color: #0056b3; /* Mantendo um tom de azul para contraste */
+        }
+
+        ._pa_activity-card {
+            background-color: var(--_pa_card-background);
+            border: 1px solid var(--_pa_border-color);
+            border-left: 5px solid var(--_pa_secondary-color); /* Detalhe na lateral */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0; /* Começa invisível para a animação */
+            transform: translateY(20px); /* Começa um pouco abaixo para o slide-up */
+            animation: _pa_cardFadeIn 0.5s forwards; /* Animação para cada card */
+        }
+
+        ._pa_activity-card:hover {
+            transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+            box-shadow: 0 8px 20px var(--_pa_shadow-color);
+        }
+
+        ._pa_activity-card h3 {
+            margin-top: 0;
+            color: var(--_pa_primary-color);
+            font-size: 1.5em;
+            border-bottom: 1px dashed var(--_pa_border-color);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        ._pa_activity-card p {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        ._pa_activity-card strong {
+            color: var(--_pa_primary-color);
+            font-weight: 600;
+        }
+
+        /* Animações */
+        @keyframes _pa_fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes _pa_slideInFromTop {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes _pa_cardFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            ._pa_container {
+                margin: 20px auto;
+                padding: 20px;
+            }
+            ._pa_hero-section h1 {
+                font-size: 2em;
+            }
+            ._pa_hero-section p {
+                font-size: 1em;
+            }
+            ._pa_filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            ._pa_filters select, ._pa_filters button {
+                width: 100%;
+                box-sizing: border-box; /* Garante que o padding não estoure o width */
+            }
+            ._pa_activity-card {
+                padding: 15px;
+            }
+            ._pa_activity-card h3 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+
+    
+        <div class="_pa_hero-section">
+            <h1>Descubra o Mundo de Atividades!</h1>
+            <p>Seu guia completo com **centenas de atividades** cuidadosamente selecionadas para estimular o desenvolvimento do seu filho em cada fase da infância. Brincar, aprender e crescer juntos nunca foi tão fácil!</p>
+        </div>
+
+        <div class="_pa_filters">
+            <label for="_pa_age-filter">Filtrar por Idade:</label>
+            <select id="_pa_age-filter">
+                <option value="">Selecione a Idade</option> <option value="0-1">0-1 Ano</option>
+                <option value="1-3">1-3 Anos</option>
+                <option value="3-5">3-5 Anos</option>
+                <option value="5-7">5-7 Anos</option>
+                <option value="7-10">7-10 Anos</option>
+                <option value="10+">10+ Anos</option>
+            </select>
+
+            <label for="_pa_area-filter">Filtrar por Área:</label>
+            <select id="_pa_area-filter">
+                <option value="">Selecione a Área</option> <option value="cognitivo">Cognitivo</option>
+                <option value="motor">Motor (Grossa e Fina)</option>
+                <option value="socioemocional">Socioemocional</option>
+                <option value="linguagem">Linguagem e Comunicação</option>
+                <option value="criatividade">Criatividade e Artes</option>
+                <option value="vida-pratica">Habilidades de Vida Prática</option>
+                <option value="natureza">Natureza e Sustentabilidade</option>
+            </select>
+            <button onclick="applyFilters()">Aplicar Filtros</button>
+        </div>
+
+        <div id="_pa_activities-list">
+            <p style="text-align: center; color: #777; margin-top: 30px;">
+                Por favor, selecione uma **Idade** e, opcionalmente, uma **Área** para visualizar as atividades.
+            </p>
+        </div>
+
+        <hr>
+
+    <script>
+        // Dados das atividades (Adicione o máximo que puder aqui!)
+        const activities = [
+            // --- ATIVIDADES 0-1 ANO ---
+            { age: "0-1", area: "motor", title: "Tempo de Barriga (Tummy Time) Interativo", description: "Coloque o bebê de bruços em uma superfície confortável e segura. Use brinquedos coloridos ou um espelho inquebrável para estimular o levantamento da cabeça e o fortalecimento do pescoço e tronco. Essencial para rolar e engatinhar. Faça por curtos períodos, várias vezes ao dia." },
+            { age: "0-1", area: "linguagem", title: "Diálogo de Sons e Balbucios", description: "Imite os sons e balbucios do bebê, e responda como se estivessem conversando. Varie o tom de voz e as expressões faciais. Isso incentiva a vocalização, a escuta ativa e a base para a comunicação verbal." },
+            { age: "0-1", area: "cognitivo", title: "Móbile Sensorial Caseiro", description: "Crie um móbile com objetos de diferentes texturas, cores vibrantes e alguns que emitam sons suaves (guizos seguros). Pendure-o onde o bebê possa observar e tentar alcançar. Estimula a percepção visual, auditiva e a coordenação olho-mão." },
+            { age: "0-1", area: "socioemocional", title: "Brincadeira de Esconde-Achou!", description: "Cubra o rosto com as mãos ou um pano leve e depois revele-o dizendo 'Achou!'. Esta brincadeira simples fortalece o vínculo afetivo, ensina sobre a permanência do objeto e desenvolve a confiança e a antecipação." },
+            { age: "0-1", area: "criatividade", title: "Pintura com Alimentos Comestíveis", description: "Em uma bandeja limpa, coloque porções de iogurte natural misturado com purê de frutas ou legumes coloridos (ex: beterraba, espinafre). Deixe o bebê explorar a 'tinta' com as mãos e os pés. É uma forma segura de iniciar a exploração artística e sensorial." },
+            { age: "0-1", area: "motor", title: "Massagem Relaxante e Sensorial", description: "Com um óleo ou creme neutro, faça uma massagem suave no corpo do bebê. Converse com ele sobre o que está fazendo. A massagem ajuda no relaxamento, na consciência corporal e no fortalecimento do vínculo." },
+            { age: "0-1", area: "linguagem", title: "Leitura de Livros de Pano ou Plástico", description: "Apresente livros com texturas diferentes, sons e imagens simples. Nomeie os objetos e faça os sons correspondentes. Estimula o amor pela leitura, a audição e o reconhecimento de vocabulário." },
+            { age: "0-1", area: "cognitivo", title: "Exploração de Chocalhos e Sons", description: "Ofereça chocalhos seguros de diferentes materiais e sons. Agite-os em várias direções para que o bebê siga o som e tente alcançá-los. Desenvolve a percepção auditiva e a coordenação mão-olho." },
+            { age: "0-1", area: "socioemocional", title: "Espelho Mágico", description: "Coloque um espelho inquebrável em um local seguro onde o bebê possa se ver. Incentive-o a tocar e interagir com seu reflexo. Promove o autoconhecimento e a interação social (com a própria imagem)." },
+            { age: "0-1", area: "criatividade", title: "Cesto de Tesouros para Bebês", description: "Monte um cesto com objetos cotidianos seguros e de diferentes materiais (colher de pau, escova macia, bolas de lã, chaves grandes limpas). Deixe o bebê explorar livremente. Estimula a curiosidade e a exploração sensorial." },
+            { age: "0-1", area: "motor", title: "Engatinhando com Túneis", description: "Crie pequenos túneis com caixas de papelão ou cobertores para incentivar o engatinhar. Isso fortalece os músculos e a coordenação." },
+            { age: "0-1", area: "linguagem", title: "Nomeando Partes do Corpo", description: "Enquanto troca a fralda ou veste o bebê, nomeie as partes do corpo (nariz, orelha, pé). Faça cócegas e risadas. Ajuda no reconhecimento e vocabulário." },
+            { age: "0-1", area: "cognitivo", title: "Brincando com Bloquinhos Macios", description: "Ofereça blocos de tecido ou espuma para o bebê pegar, amassar e (tentar) empilhar. Desenvolve a preensão e a coordenação." },
+            { age: "0-1", area: "socioemocional", title: "Cantigas de Ninar e Carinhos", description: "Cante canções de ninar e faça carinhos suaves. A música e o toque fortalecem o vínculo e promovem segurança e bem-estar." },
+            { age: "0-1", area: "criatividade", title: "Exploração de Texturas com Panos", description: "Junte panos de diferentes texturas (seda, algodão, veludo) e deixe o bebê sentir. Estimula o tato e a curiosidade." },
+            { age: "0-1", area: "motor", title: "Alcançar Brinquedos Suspensos", description: "Pendure brinquedos coloridos um pouco acima do bebê para que ele tente alcançá-los. Fortalece braços e tronco." },
+            { age: "0-1", area: "linguagem", title: "Livros com Sons e Texturas", description: "Explore livros interativos com botões de som e diferentes texturas para tocar. Estimula audição e tato junto com a linguagem." },
+            { age: "0-1", area: "cognitivo", title: "Jogo de Colocar e Tirar (Potes)", description: "Dê ao bebê potes plásticos e objetos seguros para ele colocar dentro e tirar. Ajuda a entender causa e efeito." },
+            { age: "0-1", area: "socioemocional", title: "Sorrisos e Imitar Expressões", description: "Sorria para o bebê e imite suas expressões faciais. Isso incentiva a interação social e o reconhecimento de emoções." },
+            { age: "0-1", area: "criatividade", title: "Brincadeira de Iluminação (Lanterna)", description: "Com uma lanterna, projete luzes na parede em um quarto escuro. Faça-as se moverem lentamente para o bebê seguir com os olhos. Estimula o foco visual e a percepção." },
+
+            // --- ATIVIDADES 1-3 ANOS ---
+            { age: "1-3", area: "motor", title: "Circuito de Desafios Motoros", description: "Crie um percurso simples com túneis de cobertor, almofadas para pular, uma linha de fita no chão para andar em cima e caixas para subir e descer. Desenvolve a coordenação motora grossa, equilíbrio e planejamento de movimentos." },
+            { age: "1-3", area: "linguagem", title: "Caixa de Advinhas com Imagens", description: "Cole imagens de objetos comuns (bola, carro, fruta) em cartões. Tire um cartão e dê pistas simples para a criança adivinhar o que é. 'É redondo e rola' (bola). Ajuda a expandir o vocabulário e o raciocínio dedutivo." },
+            { age: "1-3", area: "cognitivo", title: "Classificação por Cor e Forma", description: "Separe blocos ou brinquedos de diferentes cores e formas. Peça para a criança agrupá-los por cor ou forma. Introduz conceitos de classificação e discriminação visual." },
+            { age: "1-3", area: "socioemocional", title: "Faz de Conta: Rotinas Diárias", description: "Brinque de faz de conta encenando rotinas diárias com bonecas ou bichos de pelúcia: dar banho, alimentar, colocar para dormir. Ajuda a criança a compreender e praticar habilidades sociais, empatia e organização." },
+            { age: "1-3", area: "criatividade", title: "Colagem com Materiais da Natureza", description: "Juntem folhas secas, gravetos pequenos, pétalas de flores. Em casa, use cola e papel para criar uma colagem. Estimula a criatividade, a observação da natureza e a coordenação motora fina." },
+            { age: "1-3", area: "vida-pratica", title: "Guardar Brinquedos por Categoria", description: "Encoraje a criança a guardar seus brinquedos em caixas ou locais específicos (carros com carros, blocos com blocos). Ensina organização, categorização e responsabilidade." },
+            { age: "1-3", area: "natureza", title: "Jardinagem de Sementes Simples", description: "Plante sementes de rápido crescimento (feijão, lentilha) em um copo com algodão ou vaso pequeno. Observem juntos o processo. Ensina sobre o ciclo da vida, paciência e responsabilidade com o meio ambiente." },
+            { age: "1-3", area: "motor", title: "Andar de Triciclo ou Bicicleta de Equilíbrio", description: "Incentive o uso de um triciclo ou bicicleta de equilíbrio (sem pedais). Promove o desenvolvimento da coordenação, equilíbrio e confiança na locomoção." },
+            { age: "1-3", area: "linguagem", title: "Canto de Músicas com Movimentos", description: "Cante músicas infantis que envolvam movimentos corporais (ex: 'Cabeça, Ombro, Joelho e Pé'). Ajuda na memorização, coordenação e associação de palavras com ações." },
+            { age: "1-3", area: "cognitivo", title: "Quebra-Cabeças de Pino Simples", description: "Ofereça quebra-cabeças com peças grandes e pinos para encaixar. Desenvolve a coordenação olho-mão, o raciocínio espacial e a resolução de problemas." },
+            { age: "1-3", area: "socioemocional", title: "Livro de Emoções com Fotos", description: "Crie um pequeno livro com fotos de pessoas (familiares, amigos) expressando diferentes emoções (alegre, triste, bravo). Converse sobre cada emoção. Ajuda a identificar e expressar sentimentos." },
+            { age: "1-3", area: "criatividade", title: "Massinha Caseira com Utensílios", description: "Prepare massinha caseira e ofereça utensílios de cozinha seguros (rolos, cortadores de biscoito, garfos). Estimula a criatividade, a motricidade fina e o faz de conta." },
+            { age: "1-3", area: "vida-pratica", title: "Colocar Roupas na Lavanderia", description: "Incentive a criança a colocar suas roupas sujas no cesto de lavanderia. Ensina organização e responsabilidade com os pertences." },
+            { age: "1-3", area: "natureza", title: "Passeio de Descoberta no Quintal", description: "Explorem o quintal ou um parque, buscando por folhas, pedrinhas, flores. Conversem sobre o que encontram. Estimula a curiosidade e a conexão com a natureza." },
+            { age: "1-3", area: "motor", title: "Brincadeira de Arremessar Bola", description: "Use uma bola leve e incentive a criança a arremessar em um cesto ou em você. Aprimora a coordenação olho-mão e a força." },
+            { age: "1-3", area: "linguagem", title: "Contar Histórias com Fantoches", description: "Use fantoches simples para contar histórias. Mude as vozes dos personagens. Estimula a imaginação, a linguagem e a expressão emocional." },
+            { age: "1-3", area: "cognitivo", title: "Empilhar Bloquinhos por Tamanho", description: "Ofereça blocos de diferentes tamanhos e peça para a criança empilhá-los do maior para o menor (ou vice-versa). Desenvolve a percepção de tamanho e a sequência." },
+            { age: "1-3", area: "socioemocional", title: "Compartilhando Brinquedos", description: "Crie situações para a criança praticar o compartilhamento de brinquedos com amigos ou irmãos. Ensina sobre cooperação e empatia." },
+            { age: "1-3", area: "criatividade", title: "Desenho Livre com Giz de Cera Grosso", description: "Disponibilize papel grande e giz de cera grosso. Deixe a criança rabiscar e expressar-se livremente. Estimula a expressão artística e a motricidade fina." },
+            { age: "1-3", area: "vida-pratica", title: "Ajudar a Arrumar a Mesa", description: "Permita que a criança ajude a colocar itens seguros na mesa (guardanapos, talheres plásticos). Desenvolve a autonomia e o senso de contribuição." },
+            { age: "1-3", area: "natureza", title: "Pintura com Água ao Ar Livre", description: "Com um pincel e um pote de água, deixe a criança 'pintar' em paredes externas, calçadas ou pedras. Uma atividade criativa e refrescante sem bagunça." },
+            { age: "1-3", area: "motor", title: "Rastejar e Caminhar com Obstáculos", description: "Use travesseiros e almofadas para criar um pequeno percurso de rastejar e caminhar por cima. Fortalece os músculos e o equilíbrio." },
+            { age: "1-3", area: "linguagem", title: "Músicas e Rimas com Nomes", description: "Crie músicas ou rimas simples usando o nome da criança ou de familiares. Divertido para o desenvolvimento da linguagem e reconhecimento de nomes." },
+            { age: "1-3", area: "cognitivo", title: "Esconde-esconde de Objetos", description: "Esconda um brinquedo familiar sob um cobertor ou atrás de uma almofada e peça para a criança encontrá-lo. Desenvolve a permanência do objeto e a busca visual." },
+            { age: "1-3", area: "socioemocional", title: "Bonecas/Bichos de Estimação: Rotina do Sono", description: "Ajude a criança a colocar as bonecas ou bichos de pelúcia para 'dormir', com histórias e canções de ninar. Ensina sobre rotinas e cuidado." },
+            { age: "1-3", area: "criatividade", title: "Fazer Mosaico com Grãos", description: "Em um papel com cola, deixe a criança colar grãos grandes (feijão, milho) para criar um mosaico. Estimula a criatividade e a coordenação fina." },
+            { age: "1-3", area: "vida-pratica", title: "Escolher a Própria Roupa (Opções Limitadas)", description: "Ofereça duas opções de roupa apropriadas para o clima e deixe a criança escolher. Promove a autonomia e a tomada de decisão." },
+            { age: "1-3", area: "natureza", title: "Coleta de Tesouros Naturais", description: "Durante um passeio, peçam para a criança coletar 'tesouros' como pedras lisas, folhas interessantes, gravetos. Conversem sobre o que encontraram." },
+            { age: "1-3", area: "motor", title: "Brincadeira de Bolinhas de Sabão", description: "Soprar e estourar bolinhas de sabão. Ajuda na coordenação olho-mão e na coordenação motora grossa ao correr atrás delas." },
+            { age: "1-3", area: "linguagem", title: "Descrever o Que Vê", description: "Enquanto caminham ou brincam, descreva o que vê e peça para a criança fazer o mesmo. 'Olha, um carro vermelho!'. Expande o vocabulário e a observação." },
+
+            // --- ATIVIDADES 3-5 ANOS ---
+            { age: "3-5", area: "cognitivo", title: "Jogo da Memória com Cartas Maiores", description: "Prepare um jogo da memória com 10-12 pares de cartas. Comece com menos pares se necessário. Melhora a concentração, a memória visual e a capacidade de seguir regras." },
+            { age: "3-5", area: "motor", title: "Pular Corda e Amarelinha", description: "Introduza o pular corda e a amarelinha. Essas atividades são excelentes para o desenvolvimento da coordenação motora grossa, equilíbrio, ritmo e contagem." },
+            { age: "3-5", area: "linguagem", title: "Contação de Histórias com Início, Meio e Fim", description: "Peça para a criança criar uma história a partir de um objeto, uma imagem ou um título. Incentive-a a pensar em um começo, um desenvolvimento e um final. Desenvolve a narrativa, a criatividade e a organização de ideias." },
+            { age: "3-5", area: "socioemocional", title: "Resolução de Conflitos com Bonecos", description: "Use bonecos ou personagens para simular pequenos conflitos (ex: dois bonecos querem o mesmo brinquedo). Pergunte à criança como eles poderiam resolver a situação. Ajuda a desenvolver habilidades de negociação e empatia." },
+            { age: "3-5", area: "criatividade", title: "Escultura com Massa de Modelar e Materiais Naturais", description: "Combine massa de modelar com pequenos gravetos, folhas, sementes. Incentive a criança a criar esculturas ou cenários. Estimula a imaginação, a coordenação motora fina e a exploração de texturas." },
+            { age: "3-5", area: "vida-pratica", title: "Ajudar a Preparar Lanches Simples", description: "Permita que a criança ajude a preparar lanches simples, como sanduíches, salada de frutas (com frutas já cortadas) ou misturar ingredientes. Desenvolve a coordenação, a autonomia e noções básicas de culinária." },
+            { age: "3-5", area: "natureza", title: "Jardinagem de Sementes Simples", description: "Plante sementes de rápido crescimento (feijão, lentilha) em um copo com algodão ou vaso pequeno. Observem juntos o processo. Ensina sobre o ciclo da vida, paciência e responsabilidade com o meio ambiente." },
+            { age: "3-5", area: "motor", title: "Pintura com Pincéis de Diferentes Tamanhos", description: "Ofereça diversos tamanhos de pincéis e tintas. Incentive a criança a explorar diferentes traços e texturas. Aprimora a preensão, o controle motor e a criatividade." },
+            { age: "3-5", area: "linguagem", title: "Jogos de Adivinhação de Palavras por Sons Iniciais", description: "Brinque de 'O que começa com a letra M?' (macaco, mesa, mão). Ajuda a criança a desenvolver a consciência fonológica, essencial para a leitura e escrita." },
+            { age: "3-5", area: "cognitivo", title: "Contagem de Objetos e Quantidades", description: "Conte objetos em diferentes grupos (ex: 3 carrinhos, 5 blocos). Peça para a criança contar junto e identificar quantidades. Desenvolve o conceito numérico e a contagem." },
+            { age: "3-5", area: "socioemocional", title: "Brincadeiras de Cooperação", description: "Proponha jogos ou atividades que exijam cooperação para alcançar um objetivo (ex: construir uma torre alta juntos). Ensina sobre trabalho em equipe e compartilhamento." },
+            { age: "3-5", area: "criatividade", title: "Criação de Personagens com Caixa de Papelão", description: "Transformem caixas de papelão em robôs, casas de boneca, carros. Deixe a criança decorar e dar vida aos seus personagens. Estimula a imaginação e a reciclagem." },
+            { age: "3-5", area: "vida-pratica", title: "Dobrar Toalhas e Roupas Pequenas", description: "Ensine a criança a dobrar toalhas de rosto, panos de prato ou suas próprias camisetas pequenas. Desenvolve a coordenação e a autonomia." },
+            { age: "3-5", area: "natureza", title: "Passeio Sensorial na Natureza", description: "Em um parque, peça para a criança tocar o tronco de uma árvore, sentir a grama, ouvir os pássaros, cheirar uma flor (com segurança). Estimula os sentidos e a conexão com o ambiente." },
+            { age: "3-5", area: "motor", title: "Recortar com Tesoura Sem Ponta", description: "Ofereça tesoura sem ponta e papel para a criança praticar o recorte em linhas retas e curvas. Aprimora a motricidade fina e a coordenação olho-mão." },
+            { age: "3-5", area: "linguagem", title: "Jogo do 'Eu Espio'", description: "Dê uma pista 'Eu espio com meu olhinho algo que começa com P'. A criança tenta adivinhar. Expande o vocabulário e a consciência fonológica." },
+            { age: "3-5", area: "cognitivo", title: "Quebra-Cabeças de 24-48 Peças", description: "Apresente quebra-cabeças com um número maior de peças. Desafia o raciocínio espacial e a paciência." },
+            { age: "3-5", area: "socioemocional", title: "Identificação e Expressão de Emoções no Dia a Dia", description: "Ajude a criança a nomear suas emoções e as dos outros em situações reais. 'Você parece triste porque seu brinquedo quebrou?'. Promove a inteligência emocional." },
+            { age: "3-5", area: "criatividade", title: "Criação de Pulseiras com Contas Grandes", description: "Use contas grandes e fios elásticos para a criança criar pulseiras e colares. Estimula a coordenação fina e a criatividade." },
+            { age: "3-5", area: "vida-pratica", title: "Preparar a Mochila para a Escola/Passeio", description: "Ajude a criança a escolher e colocar os itens necessários na mochila para um passeio ou para a escola. Ensina organização e responsabilidade." },
+            { age: "3-5", area: "natureza", title: "Construir um Ninho de Pássaro (com galhos e folhas)", description: "Colete materiais naturais e tentem construir um ninho de pássaro. Estimula a criatividade, a motricidade fina e o respeito pela fauna." },
+            { age: "3-5", area: "motor", title: "Desenho de Labirintos Simples", description: "Desenhe labirintos simples e peça para a criança traçar o caminho com o dedo ou lápis. Melhora a coordenação motora fina e o planejamento visual." },
+            { age: "3-5", area: "linguagem", title: "Jogo de Completar Frases", description: "Comece uma frase e peça para a criança completar. 'O cachorro faz...' 'A flor cheira a...'. Expande o vocabulário e a compreensão." },
+            { age: "3-5", area: "cognitivo", title: "Reconhecimento de Números e Letras", description: "Use cartões com números e letras, peça para a criança identificá-los. Inicia o reconhecimento pré-alfabetização e pré-matemática." },
+            { age: "3-5", area: "socioemocional", title: "Brincadeira de Chef de Cozinha", description: "Com utensílios de cozinha de brinquedo ou reais seguros, simulem um restaurante. A criança assume o papel de chef e 'serve' os pratos. Desenvolve a criatividade, a cooperação e a expressão de papéis." },
+            { age: "3-5", area: "criatividade", title: "Pintura com Carimbos de Batata", description: "Corte batatas ao meio e faça desenhos simples (estrela, coração). Use tinta e deixe a criança carimbar em papel. Estimula a criatividade e a coordenação." },
+            { age: "3-5", area: "vida-pratica", title: "Ajudar a Separar o Lixo Reciclável", description: "Ensine a criança a separar lixo seco do lixo orgânico. Promove a consciência ambiental e a responsabilidade." },
+            { age: "3-5", area: "natureza", title: "Observar Formigas ou Joaninhas", description: "Encontrem um formigueiro ou procurem joaninhas no jardim. Conversem sobre como vivem. Estimula a observação e o respeito pelos pequenos seres." },
+            { age: "3-5", area: "motor", title: "Andar de Ponta dos Pés e Calcanhares", description: "Proponha a brincadeira de andar só na ponta dos pés ou só nos calcanhares. Ajuda no equilíbrio e na consciência corporal." },
+            { age: "3-5", area: "linguagem", title: "Contar a Rotina Diária", description: "No final do dia, peça para a criança recontar o que fez, em ordem. 'Primeiro eu comi, depois eu brinquei'. Ajuda na sequência de eventos e na linguagem narrativa." },
+
+            // --- ATIVIDADES 5-7 ANOS ---
+            { age: "5-7", area: "cognitivo", title: "Quebra-Cabeças de 50-100 Peças", description: "Apresente quebra-cabeças mais complexos. Isso desafia o raciocínio lógico, a percepção espacial, a persistência e a coordenação olho-mão." },
+            { age: "5-7", area: "motor", title: "Iniciação em Esportes Individuais", description: "Explore atividades como andar de patins, skate ou iniciar aulas de natação. Promove o desenvolvimento da coordenação, equilíbrio, agilidade e confiança no corpo." },
+            { age: "5-7", area: "linguagem", title: "Criação de Pequenas Peças Teatrais", description: "Incentive a criança a criar e encenar pequenas peças teatrais usando fantasias ou adereços. Ajuda na expressão verbal, criatividade, memorização de falas e colaboração." },
+            { age: "5-7", area: "socioemocional", title: "Jogos de Tabuleiro com Tomada de Decisão", description: "Joguem jogos de tabuleiro que exijam estratégia e tomada de decisão (ex: Jogo da Vida, Damas). Ensina sobre seguir regras, lidar com vitórias e derrotas, e interagir socialmente." },
+            { age: "5-7", area: "criatividade", title: "Desenho de Observação e Natureza Morta", description: "Organize um grupo de objetos simples (frutas, flores, brinquedos) e peça para a criança desenhá-los, prestando atenção aos detalhes. Aprimora a observação, a coordenação motora fina e a percepção artística." },
+            { age: "5-7", area: "vida-pratica", title: "Organizar o Próprio Quarto", description: "Ensine a criança a organizar seu próprio quarto, categorizando objetos e guardando-os em seus devidos lugares. Desenvolve a autonomia, responsabilidade e habilidades de organização." },
+            { age: "5-7", area: "natureza", title: "Exploração de Insetos e Pequenos Animais", description: "Em um parque ou jardim, observem insetos e pequenos animais. Usem lupas e livros para identificá-los. Desperta a curiosidade pela biologia, respeito pela natureza e observação." },
+            { age: "5-7", area: "motor", title: "Iniciação à Escrita (letras e palavras)", description: "Ofereça materiais para a criança praticar a escrita de letras, sílabas e palavras simples. Use letras móveis, quadro negro ou papel. Fortalece a motricidade fina e a alfabetização." },
+            { age: "5-7", area: "linguagem", title: "Criação de Revistas em Quadrinhos Simples", description: "Incentive a criança a criar suas próprias histórias em quadrinhos, desenhando os personagens e escrevendo os diálogos. Estimula a narrativa visual e escrita, e a criatividade." },
+            { age: "5-7", area: "cognitivo", title: "Jogos de Lógica com Blocos de Encaixe", description: "Utilize blocos de encaixe (LEGO, K'nex) para montar estruturas seguindo modelos ou criando livremente. Desenvolve o raciocínio espacial, o planejamento e a resolução de problemas." },
+            { age: "5-7", area: "socioemocional", title: "Simulação de Profissões e Papéis Sociais", description: "Brinquem de médico, professor, astronauta. Troquem de papéis. Ajuda a criança a compreender diferentes funções sociais, a praticar a empatia e a lidar com situações do cotidiano." },
+            { age: "5-7", area: "criatividade", title: "Criação de Máscaras e Fantasias com Reciclados", description: "Usem caixas, rolos de papel e outros materiais recicláveis para criar máscaras e fantasias. Estimula a imaginação e a sustentabilidade." },
+            { age: "5-7", area: "vida-pratica", title: "Preparar o Lanche da Escola", description: "Ajude a criança a montar seu próprio lanche da escola, escolhendo e embalando os itens. Promove autonomia e hábitos saudáveis." },
+            { age: "5-7", area: "natureza", title: "Caminhada de Observação na Natureza", description: "Façam uma caminhada em um parque ou floresta, focando em observar e identificar elementos como diferentes tipos de árvores, folhas, flores, pedras. Leve uma lupa para observar detalhes." },
+            { age: "5-7", area: "motor", title: "Jogos de Pular Corda com Músicas", description: "Combine pular corda com cantigas e rimas. Adicione desafios de pular em um pé só, pular mais rápido, etc. Aprimora coordenação, ritmo e agilidade." },
+            { age: "5-7", area: "linguagem", title: "Criar Poemas com Rimas", description: "Incentive a criação de pequenos poemas usando rimas simples. 'A flor no jardim, cheira a jasmim'. Desenvolve a criatividade e a consciência fonológica." },
+            { age: "5-7", area: "cognitivo", title: "Desafios de Matemática Divertidos", description: "Use jogos de cartas, dominós ou aplicativos com desafios de soma, subtração e reconhecimento de números de forma lúdica. Torna a matemática divertida." },
+            { age: "5-7", area: "socioemocional", title: "Diálogo sobre Sentimentos e Emoções", description: "Crie um momento para conversar sobre como cada um se sentiu durante o dia. 'O que te deixou feliz hoje? O que te deixou triste?'. Promove a comunicação e a empatia." },
+            { age: "5-7", area: "criatividade", title: "Pintura em Telas Pequenas", description: "Ofereça pequenas telas e tintas acrílicas para a criança criar suas próprias obras de arte. Estimula a expressão e a técnica artística." },
+            { age: "5-7", area: "vida-pratica", title: "Ajudar a Lavar Louça (plástico)", description: "Permita que a criança ajude a lavar utensílios plásticos ou inquebráveis. Ensina sobre responsabilidade e colaboração." },
+            { age: "5-7", area: "natureza", title: "Construir um Mini Terrário", description: "Em um pote de vidro, ajudem a criança a criar um mini terrário com terra, pedrinhas, musgo e pequenas plantas. Ensina sobre ecossistemas e cuidado com a natureza." },
+            { age: "5-7", area: "motor", title: "Aprender a Amarrar Cadarços", description: "Dedique um tempo para ensinar e praticar amarrar os cadarços. É uma habilidade motora fina essencial para a autonomia." },
+            { age: "5-7", area: "linguagem", title: "Leitura Compartilhada com Perguntas", description: "Ao ler livros, faça perguntas sobre a história, os personagens, e o que pode acontecer em seguida. Estimula a compreensão de texto e o pensamento crítico." },
+            { age: "5-7", area: "cognitivo", title: "Jogos de Tabuleiro com Contagem e Avanço", description: "Jogos como o 'Jogo da Vida' ou 'Trilha' ajudam na contagem, reconhecimento de números e compreensão de regras de progressão." },
+            { age: "5-7", area: "socioemocional", title: "Regras da Casa e Consequências", description: "Converse com a criança sobre as regras da casa e as consequências de não segui-las. Ajuda a entender limites e responsabilidade." },
+            { age: "5-7", area: "criatividade", title: "Criação de Colagens Temáticas", description: "Escolham um tema (ex: 'meu sonho', 'o espaço') e usem recortes de revistas, papéis coloridos e cola para criar uma colagem. Estimula a imaginação e a composição visual." },
+            { age: "5-7", area: "vida-pratica", title: "Escolher a Roupa de Acordo com o Clima", description: "Ensine a criança a olhar o tempo e escolher roupas adequadas. Promove a autonomia e a percepção ambiental." },
+            { age: "5-7", area: "natureza", title: "Desenho e Pintura da Natureza", description: "Em um parque, leve papéis e lápis de cor/giz para a criança desenhar o que vê: árvores, flores, nuvens. Estimula a observação e a expressão artística naturalista." },
+            { age: "5-7", area: "motor", title: "Corrida de Saco ou Pula-saco", description: "Uma atividade divertida que desenvolve a coordenação, o equilíbrio e a força das pernas. Ótima para gastar energia!" },
+            { age: "5-7", area: "linguagem", title: "Contar Anedotas e Piadas", description: "Incentive a criança a contar anedotas e piadas simples. Desenvolve o senso de humor, a dicção e a capacidade de contar uma história." },
+
+            // --- ATIVIDADES 7-10 ANOS ---
+            { age: "7-10", area: "cognitivo", title: "Introdução ao Xadrez ou Damas", description: "Ensine as regras básicas do xadrez ou damas. Estes jogos são excelentes para desenvolver o raciocínio estratégico, o planejamento, a paciência e a antecipação de movimentos." },
+            { age: "7-10", area: "motor", title: "Prática de Esportes Coletivos", description: "Incentive a participação em esportes coletivos como futebol, basquete, vôlei ou handebol em ligas ou times. Além da coordenação motora, promove o trabalho em equipe, a disciplina e a socialização." },
+            { age: "7-10", area: "linguagem", title: "Escrita de Diários ou Pequenos Contos", description: "Estimule a criança a manter um diário pessoal ou a escrever pequenos contos e poemas. Incentiva a expressão de sentimentos, a criatividade na escrita e o desenvolvimento do vocabulário." },
+            { age: "7-10", area: "socioemocional", title: "Projetos de Ajuda Comunitária Simples", description: "Envolver a criança em atividades voluntárias simples, como coletar alimentos, ajudar em um abrigo de animais ou limpar um parque. Desenvolve a empatia, a responsabilidade social e o senso de comunidade." },
+            { age: "7-10", area: "criatividade", title: "Aulas de Instrumento Musical", description: "Se houver interesse, matricule a criança em aulas de um instrumento musical. Além de desenvolver a musicalidade, aprimora a disciplina, a coordenação motora fina e a concentração." },
+            { age: "7-10", area: "vida-pratica", title: "Gerenciamento de Mesada e Pequenas Finanças", description: "Se apropriado, estabeleça uma mesada e ajude a criança a criar um sistema para gerenciar seu dinheiro (economizar, gastar, doar). Ensina sobre valor do dinheiro, planejamento financeiro e responsabilidade." },
+            { age: "7-10", area: "natureza", title: "Observação de Estrelas e Fenômenos Naturais", description: "Em uma noite clara, observem as estrelas e constelações. Conversem sobre os planetas, a lua. Em outros momentos, observem as nuvens, o vento. Desperta a curiosidade pela astronomia e pelo mundo natural." },
+            { age: "7-10", area: "motor", title: "Construção de Maquetes e Modelos", description: "Utilize kits de maquetes, blocos de construção avançados ou materiais reciclados para criar modelos de edifícios, veículos, etc. Aprimora a motricidade fina, o planejamento e a visão espacial." },
+            { age: "7-10", area: "linguagem", title: "Jogos de Palavras Cruzadas e Caça-Palavras", description: "Ofereça livros de palavras cruzadas e caça-palavras adequados para a idade. Expande o vocabulário, a ortografia e a concentração." },
+            { age: "7-10", area: "cognitivo", title: "Experimentos Científicos Caseiros", description: "Realizem experimentos científicos simples com materiais do dia a dia (ex: vulcão de bicarbonato, cristais de sal). Estimula o pensamento científico, a observação e a formulação de hipóteses." },
+            { age: "7-10", area: "socioemocional", title: "Clube do Livro com Amigos", description: "Crie um pequeno clube do livro com amigos, onde eles leem e discutem um livro por mês. Promove a leitura, a comunicação e o respeito por diferentes opiniões." },
+            { age: "7-10", area: "criatividade", title: "Criação de Animações Stop Motion", description: "Com um celular e alguns brinquedos, ajude a criança a criar pequenas animações em stop motion. Estimula a criatividade, a paciência e a compreensão de sequências." },
+            { age: "7-10", area: "vida-pratica", title: "Organizar o Próprio Armário/Gavetas", description: "Ensine a criança a organizar suas roupas e pertences em armários e gavetas. Desenvolve a autonomia e o senso de organização." },
+            { age: "7-10", area: "natureza", title: "Montar um Álbum de Folhas e Flores", description: "Coletem folhas e flores secas e montem um álbum, identificando as espécies. Incentiva a observação botânica e a preservação." },
+            { age: "7-10", area: "motor", title: "Escrita Criativa com Temas Variados", description: "Proponha temas para escrever histórias, poemas ou cartas. Foco na criatividade e na fluidez da escrita. Aprimora a caligrafia e a expressão." },
+            { age: "7-10", area: "linguagem", title: "Jogos de Adivinhação de Palavras Complexas", description: "Brinque de adivinhar palavras com mais sílabas, usando sinônimos e antônimos como pistas. Expande o vocabulário e o raciocínio." },
+            { age: "7-10", area: "cognitivo", title: "Jogos de Lógica e Estratégia Online (com supervisão)", description: "Explore jogos online educativos que exigem lógica e estratégia, sempre com limites de tempo e supervisão. Desenvolve o raciocínio e a resolução de problemas." },
+            { age: "7-10", area: "socioemocional", title: "Discussão de Dilemas Morais", description: "Apresente pequenos dilemas morais (baseados em livros ou situações hipotéticas) e conversem sobre as melhores decisões. Desenvolve a empatia e o senso de justiça." },
+            { age: "7-10", area: "criatividade", title: "Aulas de Desenho ou Pintura", description: "Matricule a criança em aulas de desenho ou pintura para que ela aprenda técnicas e explore diferentes estilos. Estimula o talento artístico." },
+            { age: "7-10", area: "vida-pratica", title: "Ajudar a Preparar uma Refeição Completa", description: "Envolva a criança no preparo de uma refeição mais complexa, desde a leitura da receita até o corte (com segurança) e cozimento. Ensina habilidades culinárias e matemática prática." },
+            { age: "7-10", area: "natureza", title: "Construção de Abrigos para Animais Pequenos", description: "Com materiais naturais, construam pequenos abrigos ou comedouros para pássaros ou insetos no jardim. Incentiva a consciência ecológica e a engenharia natural." },
+            { age: "7-10", area: "motor", title: "Montagem de Quebra-Cabeças 2D e 3D", description: "Desafie a criança com quebra-cabeças com mais de 100 peças e quebra-cabeças 3D. Aprimora o raciocínio espacial e a destreza manual." },
+            { age: "7-10", area: "linguagem", title: "Dramatização de Cenas de Livros", description: "Escolham cenas favoritas de livros e dramatizem-nas, criando roteiros e diálogos. Desenvolve a expressão, a memória e a compreensão textual." },
+            { age: "7-10", area: "cognitivo", title: "Jogos de Tabuleiro Complexos", description: "Introduza jogos como 'Monopoly', 'War' (ou versões infantis). Estimula o pensamento estratégico, negociação e compreensão de regras complexas." },
+            { age: "7-10", area: "socioemocional", title: "Planejar uma Festa ou Evento Familiar", description: "Envolva a criança no planejamento de um evento, desde o convite até a lista de convidados e atividades. Desenvolve habilidades de organização, comunicação e responsabilidade." },
+            { age: "7-10", area: "criatividade", title: "Criação de Joias Artesanais", description: "Use miçangas, fios, argila para criar joias personalizadas. Estimula a motricidade fina, o design e a originalidade." },
+            { age: "7-10", area: "vida-pratica", title: "Aprender a Cuidar de um Pet", description: "Se tiver um animal de estimação, ensine e atribua responsabilidades de cuidado (alimentar, passear, limpar). Promove responsabilidade e empatia." },
+            { age: "7-10", area: "natureza", title: "Coleta e Classificação de Pedras", description: "Em um passeio, colete diferentes tipos de pedras. Pesquisem sobre elas e classifiquem-nas por tipo, cor, tamanho. Desperta o interesse pela geologia." },
+            { age: "7-10", area: "motor", title: "Prática de Caligrafia e Letras Decorativas", description: "Incentive a criança a aprimorar sua caligrafia ou a aprender diferentes estilos de letras. Fortalece a motricidade fina e a expressão artística da escrita." },
+            { age: "7-10", area: "linguagem", title: "Criação de Notícias ou Reportagens", description: "Peça para a criança 'reportar' eventos do dia a dia da família ou da escola. Estimula a observação, a organização de fatos e a comunicação." },
+
+            // --- ATIVIDADES 10+ ANOS ---
+            { age: "10+", area: "cognitivo", title: "Desafios de Lógica e Charadas Complexas", description: "Apresente livros de lógica, charadas e enigmas mais complexos. Incentiva o raciocínio dedutivo, o pensamento lateral e a resolução criativa de problemas." },
+            { age: "10+", area: "motor", title: "Esportes Radicais (com segurança e supervisão)", description: "Se houver interesse, explore esportes como skate, BMX, patins in-line ou escalada em parede (com instrutor). Desenvolve a coordenação, equilíbrio, força e a superação de desafios físicos e mentais." },
+            { age: "10+", area: "linguagem", title: "Debates e Discussões sobre Temas Atuais", description: "Estimule debates informais sobre notícias, filmes, livros ou questões sociais. Ajuda a organizar pensamentos, argumentar com clareza, ouvir diferentes pontos de vista e formar opiniões críticas." },
+            { age: "10+", area: "socioemocional", title: "Mentoria ou Tutoria a Crianças Mais Novas", description: "Se possível, incentive a criança a mentorar ou ajudar crianças mais novas com deveres ou brincadeiras. Desenvolve a paciência, a responsabilidade, a liderança e a empatia." },
+            { age: "10+", area: "criatividade", title: "Produção de Conteúdo Digital (Vídeos, Podcasts)", description: "Com supervisão, incentive a criança a criar seus próprios vídeos curtos, podcasts ou animações usando ferramentas digitais simples. Desenvolve habilidades de roteiro, edição, produção e expressão artística na era digital." },
+            { age: "10+", area: "vida-pratica", title: "Planejamento e Execução de um Pequeno Projeto", description: "Ajude a criança a planejar e executar um pequeno projeto pessoal, como organizar um evento em casa, montar um presente elaborado, ou cuidar de uma horta. Ensina planejamento, execução, persistência e resolução de problemas." },
+            { age: "10+", area: "natureza", title: "Identificação de Plantas e Árvores Locais", description: "Com um guia de campo ou aplicativo, saiam para identificar plantas e árvores da região. Ensinem sobre a flora local, ecossistemas e a importância da biodiversidade." },
+            { age: "10+", area: "motor", title: "Aulas de Culinária Avançada ou Panificação", description: "Envolver a criança em aulas de culinária ou projetos de panificação que exijam maior precisão e técnicas. Aprimora a motricidade fina, a atenção aos detalhes e a capacidade de seguir receitas complexas." },
+            { age: "10+", area: "linguagem", title: "Escrita de Peças Teatrais Completas ou Roteiros", description: "Encoraje a criança a escrever roteiros mais elaborados para peças teatrais, curtas-metragens ou até mesmo um piloto de série. Estimula a criatividade narrativa, a estrutura de roteiro e o desenvolvimento de personagens." },
+            { age: "10+", area: "cognitivo", title: "Introdução à Programação (Python, Scratch Avançado)", description: "Explore linguagens de programação mais estruturadas como Python para iniciantes, ou projetos mais complexos no Scratch. Desenvolve o pensamento lógico, computacional e a resolução de problemas algorítmicos." },
+            { age: "10+", area: "criatividade", title: "Criação de Artes Visuais com Mídias Mistas", description: "Incentive a criação de obras de arte que combinem diferentes mídias, como pintura com colagem, desenho com fotografia, ou arte digital com elementos físicos. Promove a experimentação e a expressão artística avançada." },
+            { age: "10+", area: "vida-pratica", title: "Primeiros Socorros Básicos", description: "Ensinem conceitos básicos de primeiros socorros (como lidar com pequenos cortes, arranhões, ou o que fazer em caso de engasgo). Desenvolve a responsabilidade, o cuidado com o outro e a capacidade de agir em emergências." },
+            { age: "10+", area: "natureza", title: "Compostagem Caseira ou Horta Urbana", description: "Inicie um projeto de compostagem doméstica ou uma pequena horta em vasos. Ensina sobre sustentabilidade, ciclos da natureza, e a origem dos alimentos." },
+            { age: "10+", area: "socioemocional", title: "Simulações de Entrevistas e Habilidades de Comunicação", description: "Pratiquem simulações de entrevistas (para um clube, escola, etc.) ou conversas difíceis. Ajuda a desenvolver habilidades de comunicação, autoconfiança e a lidar com situações sociais diversas." },
+            { age: "10+", area: "motor", title: "Aprender a Tocar um Esporte Novo ou Avançar", description: "Incentive a criança a aprender um esporte completamente novo (tênis, golfe, escalada indoor) ou a aprimorar suas habilidades em um esporte já praticado. Desafia o corpo e a mente, aprimorando a coordenação e a resiliência." },
+            { age: "10+", area: "linguagem", title: "Participação em Grupos de Leitura e Debate", description: "Incentive a criança a participar de clubes de leitura mais formais ou grupos de debate, onde ela possa expressar e defender suas ideias. Melhora a oratória e o pensamento crítico." },
+            { age: "10+", area: "cognitivo", title: "Robótica e Eletrônica Básica", description: "Explore kits de robótica e eletrônica para iniciantes. Desenvolve o raciocínio lógico, a resolução de problemas e a engenharia básica." },
+            { age: "10+", area: "socioemocional", title: "Discussão de Ética e Filosofia", description: "Converse sobre dilemas éticos presentes em filmes, livros ou notícias. Estimula o pensamento crítico, a empatia e a formação de valores morais." },
+            { age: "10+", area: "criatividade", title: "Criação de Jogos de Tabuleiro Próprios", description: "Desafie a criança a criar seu próprio jogo de tabuleiro, com regras, peças e objetivos. Estimula a criatividade, o planejamento e o raciocínio lógico." },
+            { age: "10+", area: "vida-pratica", title: "Orçamento Pessoal para um Objetivo", description: "Ajude a criança a criar um orçamento para um objetivo específico (ex: comprar um videogame, viajar). Ensina planejamento financeiro, poupança e responsabilidade." },
+            { age: "10+", area: "natureza", title: "Projetos de Conservação Ambiental Local", description: "Envolva a criança em projetos de conservação ambiental na comunidade, como limpeza de parques, plantio de árvores. Desenvolve a consciência ecológica e o senso de cidadania." },
+            { age: "10+", area: "motor", title: "Capoeira ou Artes Marciais", description: "Aulas de capoeira ou artes marciais promovem coordenação, disciplina, equilíbrio e autoconfiança." },
+            { age: "10+", area: "linguagem", title: "Escrever Críticas (Livros, Filmes)", description: "Incentive a criança a escrever suas opiniões sobre livros, filmes ou jogos, justificando seus pontos de vista. Melhora a argumentação e a escrita persuasiva." },
+            { age: "10+", area: "cognitivo", title: "Desafios de Escape Room (adaptados)", description: "Proponha montar um pequeno 'escape room' em casa, com enigmas e quebra-cabeças que a criança precisa resolver para 'escapar'. Desenvolve o raciocínio e o trabalho em equipe." },
+            { age: "10+", area: "socioemocional", title: "Consciência Social e Cultural", description: "Explorem diferentes culturas através de filmes, culinária, música ou visitas a museus. Promove a abertura a novas perspectivas e o respeito à diversidade." },
+            { age: "10+", area: "criatividade", title: "Fotografia Criativa", description: "Com uma câmera simples (ou celular), incentive a criança a explorar a fotografia, experimentando ângulos, luz e composição. Estimula a percepção visual e a expressão artística." },
+            { age: "10+", area: "vida-pratica", title: "Aprender a Fazer Consertos Simples", description: "Ensine a criança a fazer pequenos consertos (trocar uma lâmpada, apertar um parafuso). Desenvolve habilidades práticas e a independência." },
+            { age: "10+", area: "natureza", title: "Observação de Aves e Vida Selvagem", description: "Com binóculos e um guia de aves, saiam para observar pássaros em seu habitat natural. Desperta a paciência, a observação e o interesse pela fauna." },
+            { age: "10+", area: "motor", title: "Dança Coreografada", description: "Aulas de dança (balé, jazz, hip-hop) ou aprender coreografias. Melhora a coordenação, o ritmo, a flexibilidade e a expressão corporal." },
+            { age: "10+", area: "linguagem", title: "Criação de Podcast ou Rádio Show", description: "Ajude a criança a criar um podcast sobre um tema de seu interesse, incluindo roteiro, gravação e edição. Desenvolve a comunicação oral, pesquisa e habilidades técnicas." }
+        ];
+
+        function displayActivities(filteredActivities) {
+            const activitiesList = document.getElementById('_pa_activities-list');
+            activitiesList.innerHTML = ''; // Limpa as atividades existentes
+
+            if (filteredActivities.length === 0) {
+                activitiesList.innerHTML = '<p style="text-align: center; color: #777; margin-top: 30px;">Nenhuma atividade encontrada para os filtros selecionados. Tente outras opções!</p>';
+                return;
+            }
+
+            // Cria um objeto para agrupar as atividades por faixa etária
+            const groupedActivities = filteredActivities.reduce((acc, activity) => {
+                if (!acc[activity.age]) {
+                    acc[activity.age] = [];
+                }
+                acc[activity.age].push(activity);
+                return acc;
+            }, {});
+
+            // Ordem das faixas etárias para exibição
+            const ageOrder = ["0-1", "1-3", "3-5", "5-7", "7-10", "10+"];
+
+            ageOrder.forEach(ageGroup => {
+                if (groupedActivities[ageGroup]) {
+                    const section = document.createElement('div');
+                    section.classList.add('_pa_activity-section');
+                    section.innerHTML = `<h2>Atividades para ${ageGroup.replace('-', ' a ').replace('+', ' ou Mais')} Anos</h2>`;
+                    activitiesList.appendChild(section);
+
+                    groupedActivities[ageGroup].forEach((activity, index) => {
+                        const activityCard = document.createElement('div');
+                        activityCard.classList.add('_pa_activity-card');
+                        activityCard.style.animationDelay = `${index * 0.1}s`; // Atraso para animação em cascata
+                        activityCard.innerHTML = `
+                            <h3>${activity.title}</h3>
+                            <p><strong>Área:</strong> ${activity.area}</p>
+                            <p>${activity.description}</p>
+                        `;
+                        activitiesList.appendChild(activityCard);
+                    });
+                }
+            });
+        }
+
+        function applyFilters() {
+            const ageFilter = document.getElementById('_pa_age-filter').value;
+            const areaFilter = document.getElementById('_pa_area-filter').value;
+            const activitiesList = document.getElementById('_pa_activities-list');
+
+            if (!ageFilter) { // Se a idade não foi selecionada
+                activitiesList.innerHTML = '<p style="text-align: center; color: #777; margin-top: 30px;">Por favor, selecione uma **Idade** e, opcionalmente, uma **Área** para visualizar as atividades.</p>';
+                return; // Não executa o filtro se a idade não foi escolhida
+            }
+
+            const filteredActivities = activities.filter(activity => {
+                const matchesAge = activity.age === ageFilter; // Agora a idade precisa ser exata
+                const matchesArea = areaFilter === "" || activity.area === areaFilter; // A área pode ser vazia
+                return matchesAge && matchesArea;
+            });
+
+            displayActivities(filteredActivities);
+        }
+
+        // Não carrega atividades ao carregar a página, exibe uma mensagem
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('_pa_age-filter').value = ""; // Garante que a opção "Selecione a Idade" esteja selecionada
+            document.getElementById('_pa_area-filter').value = ""; // Garante que a opção "Selecione a Área" esteja selecionada
+            // A mensagem inicial já está no HTML, então não precisamos chamá-la aqui.
+        });
+    </script>
+
 <!---------------------------------------------------------------------------------------------->
 <style>
       /* Cores e gradientes personalizados */
@@ -4522,6 +5027,9 @@
                 grid-template-columns: repeat(3, minmax(0, 1fr));
             }
         }
+        .color{
+            color: white;
+        }
 </style>
        
 
@@ -4534,7 +5042,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-4xl font-bold header-font mb-1">Seus Bônus Exclusivos</h2>
+                    <h2 class=" color text-4xl font-bold header-font mb-1">Seus Bônus Exclusivos</h2>
                     <p class="text-lg opacity-90">Ferramentas adicionais para potencializar sua jornada de aprendizado</p>
                 </div>
             </div>
@@ -4613,7 +5121,7 @@
                         
                         <p class="text-lg font-medium text-gray-800">Lembre-se sempre:</p>
                         <div class="quote-card bg-emerald-50 p-6 rounded-xl shadow-sm my-6">
-                            <p class="text-xl italic text-emerald-800 relative z-10">"O futuro do seu filho não é uma questão de sorte ou genética. É uma questão de escolha e de ação. Aja agora, use este guia, e observe com seus próprios olhos a transformação mágica. Seu Pequeno Gênio espera por você."</p>
+                            <p class=" colortext-xl italic text-emerald-800 relative z-10">"O futuro do seu filho não é uma questão de sorte ou genética. É uma questão de escolha e de ação. Aja agora, use este guia, e observe com seus próprios olhos a transformação mágica. Seu Pequeno Gênio espera por você."</p>
                         </div>
                     </div>
                 </div>
